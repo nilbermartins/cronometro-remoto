@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cronômetro OBS</title>
-  <link rel="stylesheet" href="estilo.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro/Timer Controlável OBS</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <div class="timer" id="display">00:00</div>
-  <script src="script.js"></script>
-</body>
+    <div id="container">
+        <div id="display">00:00:00</div>
+
+        <div id="config-panel">
+            <input type="number" id="minutosInput" value="5" min="0" placeholder="Minutos">
+            <input type="number" id="segundosInput" value="0" min="0" max="59" placeholder="Segundos">
+            <button id="setTimerBtn">Definir Tempo</button>
+        </div>
+
+        <div id="controls">
+            <button id="startStopBtn">Iniciar</button>
+            <button id="resetBtn">Resetar</button>
+            <button id="modeBtn">Mudar para Cronômetro</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
 </html>
