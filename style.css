@@ -104,19 +104,10 @@ body {
     color: #bbb;
 }
 
-/* LOGICA PARA ESCONDER/MOSTRAR */
+/* LOGICA PARA ESCONDER/MOSTRAR - CORREÇÃO FINAL */
 
-/* Esconde o controle por padrão */
-#control-container { display: none; }
-
-/* Se a URL tiver #control, mostra o controle e esconde o display */
-:target #control-container { display: block; }
-:target #display-container { display: none; }
-
-/* Se a URL tiver #display, mostra o display e esconde o controle */
-:target #display-container { display: block; }
-:target #control-container { display: none; }
-
-/* Configuração inicial: A página base (sem #) mostra o DISPLAY, mas você pode mudar para mostrar o CONTROLE se preferir */
-body:not(:has(:target)) #display-container { display: block; }
-body:not(:has(:target)) #control-container { display: none; }
+/* Força o navegador a esconder os dois elementos por padrão. */
+/* O JavaScript fará o elemento correto aparecer com 'display: block'. */
+#display-container, #control-container {
+    display: none !important; /* O !important garante que esta regra tenha prioridade máxima */
+}
