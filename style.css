@@ -1,85 +1,31 @@
 body {
-    background-color: #1a1a1a; /* Fundo escuro */
-    color: #f0f0f0; /* Texto claro */
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden; /* Remove barras de rolagem */
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#container {
-    text-align: center;
-    padding: 20px;
+.display {
+  font-size: 6rem;
+  letter-spacing: 3px;
 }
 
-/* O DISPLAY PRINCIPAL PARA O OBS */
-#display {
-    font-size: 10em; /* Grande e visível */
-    font-weight: bold;
-    color: #00ff99; /* Cor de destaque (Neon Green) */
-    text-shadow: 0 0 10px rgba(0, 255, 153, 0.7); /* Efeito neon */
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
+button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-/* Painel de Configuração (Escondido ou mais discreto para o OBS) */
-#config-panel input {
-    padding: 8px;
-    margin: 5px;
-    width: 80px;
-    text-align: center;
-    border: 1px solid #444;
-    background-color: #333;
-    color: #f0f0f0;
-    border-radius: 5px;
-}
-
-/* Controles (Botões) */
-#controls button, #setTimerBtn {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#startStopBtn {
-    background-color: #007bff; /* Azul */
-    color: white;
-}
-
-#startStopBtn:hover {
-    background-color: #0056b3;
-}
-
-#resetBtn {
-    background-color: #dc3545; /* Vermelho */
-    color: white;
-}
-
-#resetBtn:hover {
-    background-color: #bd2130;
-}
-
-#modeBtn, #setTimerBtn {
-    background-color: #6c757d; /* Cinza */
-    color: white;
-}
-
-#modeBtn:hover, #setTimerBtn:hover {
-    background-color: #5a6268;
-}
-
-/* Estilos específicos para quando o botão for 'Pausar' */
-#startStopBtn.running {
-    background-color: #ffc107; /* Amarelo */
-    color: #333;
+input {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 120px;
+  text-align: center;
 }
