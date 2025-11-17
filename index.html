@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Remoto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="display-container">
+        <div id="stopwatch-display">00:00:000</div>
+    </div>
+
+    <div id="control-container">
+        <h3>CONTROLE</h3>
+
+        <div class="timer-input-group">
+            <input type="text" id="countdown-input" placeholder="MM:SS (Ex: 05:30)">
+            <button id="set-time-btn">Definir Regressiva</button>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">INICIAR</button>
+            <button id="pause-btn">PAUSAR</button>
+            <button id="reset-btn">RESETAR</button>
+        </div>
+        <p class="status-msg" id="status-message">Modo Progressivo</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
